@@ -1,0 +1,6 @@
+schema: ${GRAPHQL_CODEGEN_URL}
+generates:
+  ./src/codegen.ts:
+    plugins:
+     - typescript
+     - typescript-resolvers
