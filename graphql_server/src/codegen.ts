@@ -34,7 +34,7 @@ export type Jedi = {
 export type JediInput = {
   lightsaberColor: JediLightsaberColor;
   name: Scalars['String'];
-  pawadanId: Scalars['Int'];
+  pawadanId?: InputMaybe<Scalars['Int']>;
   rank: JediRank;
 };
 

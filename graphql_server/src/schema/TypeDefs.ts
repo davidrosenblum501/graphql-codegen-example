@@ -35,7 +35,7 @@ export default `#graphql
     name: String!
     lightsaberColor: JediLightsaberColor!
     rank: JediRank!
-    pawadanId: Int!
+    pawadanId: Int
   }
 
   # Custom input object, all fields are optional
