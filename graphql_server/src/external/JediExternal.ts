@@ -25,7 +25,7 @@ export type JediUpdate = Partial<Omit<Jedi, 'id'>>;
 const jediStore = new Map<number, Jedi>([
   [1, {
     id: 1,
-    name: 'Obi-Wan Kenboi',
+    name: 'Obi-Wan Kenobi',
     lightsaberColor: JediLightsaberColor.BLUE,
     rank: JediRank.MASTER,
     padawanId: null,
