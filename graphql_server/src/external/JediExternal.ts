@@ -35,7 +35,7 @@ const jediStore = new Map<number, Jedi>([
     name: 'Anakin Skywalker',
     lightsaberColor: JediLightsaberColor.BLUE,
     rank: JediRank.KNIGHT,
-    padawanId: null,
+    padawanId: 5,
   }],
   [3, {
     id: 3,

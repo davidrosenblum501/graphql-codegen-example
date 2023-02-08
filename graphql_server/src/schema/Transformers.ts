@@ -63,6 +63,7 @@ const transformJedi = (jedi: Jedi): codegen.Jedi => ({
   name: jedi.name,
   lightsaberColor: transformJediLightsaberColor(jedi.lightsaberColor),
   rank: transformJediRank(jedi.rank),
+  padawanId: jedi.padawanId,
   // Below are by field resolvers
   padawan: null,
 });
