@@ -1,0 +1,8 @@
+schema: ${GRAPHQL_CODEGEN_URL}
+documents: ./src/graphql/**/*.ts
+generates:
+  ./src/codegen-client.tsx:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
