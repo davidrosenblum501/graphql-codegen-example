@@ -34,7 +34,7 @@ export type Jedi = {
 export type JediInput = {
   lightsaberColor: JediLightsaberColor;
   name: Scalars['String'];
-  pawadanId?: InputMaybe<Scalars['Int']>;
+  padawanId?: InputMaybe<Scalars['Int']>;
   rank: JediRank;
 };
 
@@ -60,7 +60,7 @@ export enum JediRank {
 export type JediUpdateInput = {
   lightsaberColor?: InputMaybe<JediLightsaberColor>;
   name?: InputMaybe<Scalars['String']>;
-  pawadanId?: InputMaybe<Scalars['Int']>;
+  padawanId?: InputMaybe<Scalars['Int']>;
   rank?: InputMaybe<JediRank>;
 };
 

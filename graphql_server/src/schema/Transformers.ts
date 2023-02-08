@@ -44,7 +44,7 @@ const transformJediInput = (input: codegen.JediInput): JediInsert => ({
   name: input.name,
   lightsaberColor: transformJediLightsaberColorReverse(input.lightsaberColor),
   rank: transformJediRankReverse(input.rank),
-  padawanId: input.pawadanId ?? null,
+  padawanId: input.padawanId ?? null,
 });
 
 const transformJediUpdateInput = (input: codegen.JediUpdateInput): JediUpdate => ({
@@ -55,7 +55,7 @@ const transformJediUpdateInput = (input: codegen.JediUpdateInput): JediUpdate =>
   rank: input.rank
     ? transformJediRankReverse(input.rank)
     : undefined,
-  padawanId: input.pawadanId ?? null,
+  padawanId: input.padawanId ?? null,
 });
 
 const transformJedi = (jedi: Jedi): codegen.Jedi => ({
