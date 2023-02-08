@@ -1,5 +1,6 @@
 import { ApolloServer } from '@apollo/server';
 import { expressMiddleware } from '@apollo/server/express4';
+import cors from 'cors';
 import dotenv from 'dotenv';
 import express from 'express';
 import http from 'http';
@@ -21,6 +22,7 @@ const main = async (): Promise<void> => {
 
   app.use(
     express.json(),
+    cors({ origin: '*' }),
     expressMiddleware(apolloServer, {
       context: createContext
     }),
